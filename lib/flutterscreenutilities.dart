@@ -3,14 +3,14 @@ library flutterscreenutilities;
 import 'package:flutter/material.dart';
 import 'package:flutterscreenutilities/navigator.dart';
 
-dynamic getScreenSize(double px) {
+dynamic getScreenSize({double px}) {
   return px *
       (MathUtilities.screenWidth(
               NavigationUtilities.key.currentState.overlay.context) /
           414);
 }
 
-dynamic getFontSize(double px) {
+dynamic getFontSize({double px}) {
   return px *
           (MathUtilities.screenWidth(
                   NavigationUtilities.key.currentState.overlay.context) /
